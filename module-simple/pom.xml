@@ -133,6 +133,24 @@
             <artifactId>hsqldb</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.isisaddons.module.audit</groupId>
+            <artifactId>isis-module-audit-dom</artifactId>
+            <version>1.13.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.isisaddons.module.command</groupId>
+            <artifactId>isis-module-command-dom</artifactId>
+            <version>1.13.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.isisaddons.metamodel.paraname8</groupId>
+            <artifactId>isis-metamodel-paraname8-dom</artifactId>
+            <version>1.13.0</version>
+        </dependency>
+
     </dependencies>
 
 </project>

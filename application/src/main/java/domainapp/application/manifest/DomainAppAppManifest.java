@@ -43,7 +43,9 @@ public class DomainAppAppManifest implements AppManifest {
         return Arrays.asList(
                 SimpleModuleDomSubmodule.class,
                 DomainAppApplicationModuleFixtureSubmodule.class,
-                DomainAppApplicationModuleServicesSubmodule.class
+                DomainAppApplicationModuleServicesSubmodule.class,
+                org.isisaddons.module.audit.AuditModule.class,
+                org.isisaddons.module.command.CommandModule.class
         );
     }
 
