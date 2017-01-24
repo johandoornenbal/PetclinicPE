@@ -181,6 +181,21 @@
                 <plugin>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>${maven-compiler-plugin.version}</version>
+                    <configuration>
+                        <source>1.8</source>
+                        <target>1.8</target>
+                        <compilerArgument>-parameters</compilerArgument>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>source</id>
+                            <phase>compile</phase>
+                        </execution>
+                        <execution>
+                            <id>test</id>
+                            <phase>test-compile</phase>
+                        </execution>
+                    </executions>
                 </plugin>
                 <plugin>
                     <artifactId>maven-jar-plugin</artifactId>
