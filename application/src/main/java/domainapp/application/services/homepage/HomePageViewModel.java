@@ -23,20 +23,20 @@ import java.util.List;
 import org.apache.isis.applib.annotation.ViewModel;
 import org.apache.isis.applib.services.i18n.TranslatableString;
 
-import domainapp.modules.simple.dom.impl.SimpleObject;
-import domainapp.modules.simple.dom.impl.SimpleObjectRepository;
+import domainapp.modules.simple.dom.petclinic.Owner;
+import domainapp.modules.simple.dom.petclinic.OwnerRepository;
 
 @ViewModel
 public class HomePageViewModel {
 
     public TranslatableString title() {
-        return TranslatableString.tr("{num} objects", "num", getObjects().size());
+        return TranslatableString.tr("{num} owners", "num", getOwners().size());
     }
 
-    public List<SimpleObject> getObjects() {
-        return simpleObjectRepository.listAll();
+    public List<Owner> getOwners() {
+        return ownerRepository.listAll();
     }
 
     @javax.inject.Inject
-    SimpleObjectRepository simpleObjectRepository;
+    OwnerRepository ownerRepository;
 }

@@ -27,7 +27,7 @@ import com.google.common.collect.Maps;
 
 import org.apache.isis.applib.fixturescripts.FixtureScript;
 
-import domainapp.modules.simple.fixture.scenario.CreateSimpleObjects;
+import domainapp.modules.simple.fixture.petclinic.OwnerFixtures;
 
 /**
  * Run the app but without setting up any fixtures.
@@ -39,7 +39,7 @@ public class DomainAppAppManifestWithFixtures extends DomainAppAppManifest {
      */
     @Override
     public List<Class<? extends FixtureScript>> getFixtures() {
-        return Lists.newArrayList(CreateSimpleObjects.class);
+        return Lists.newArrayList(OwnerFixtures.class);
     }
 
     /**
